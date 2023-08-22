@@ -10,7 +10,10 @@ h1 {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    
 }
 
 button {
@@ -18,13 +21,10 @@ button {
     border: none;
     border-radius: 6px;
     color: #fff;
-    flex-grow: 1;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2vw;
     height: 36px;
     line-height: 20px;
-    margin-left: 8px;
-    margin-right: 6px;
     min-width: 185px;
     padding: 0 16px 0 16px;
     transition: 0.3s;
@@ -40,4 +40,5 @@ button:active {
 li {
     list-style-type: none;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vw;
 }
