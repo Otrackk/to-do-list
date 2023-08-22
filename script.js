@@ -16,8 +16,9 @@ function addFunction() {
     newItem.appendChild(newContent);
     list.appendChild(newItem);
     checkbox.addEventListener("click",checked);
+    return newItem;
 }
 
-function checked(){
-    document.body.style.backgroundColor="black";
-}
+ /*function checked(newItem){
+    newItem.style.backgroundColor="red";
+}*/
