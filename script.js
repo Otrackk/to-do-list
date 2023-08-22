@@ -9,10 +9,15 @@ addItem.addEventListener("click", addFunction);
 function addFunction() {
     let itemName = prompt("Cosa vuoi aggiungere?");
     let newItem = document.createElement("li");
-    let checkbox = document.createElement("input");
+    var checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     newItem.appendChild(checkbox);
-    let newContent = document.createTextNode(itemName);
+    var newContent = document.createTextNode(itemName);
     newItem.appendChild(newContent);
     list.appendChild(newItem);
+    checkbox.addEventListener("click",checked);
+}
+
+function checked(){
+    document.body.style.backgroundColor="black";
 }
